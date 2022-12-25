@@ -1,0 +1,5 @@
+mutation DeleteEvent($id: String!) {
+  deleteEvent(id: $id) {
+    ...FStatusResponse
+  }
+}

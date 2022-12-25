@@ -1,0 +1,8 @@
+fragment FMessage on Message {
+  id
+  body
+  createdAt
+  sender {
+    ...FUser
+  }
+}

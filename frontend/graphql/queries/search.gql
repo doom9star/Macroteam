@@ -1,0 +1,15 @@
+query Search($options: SearchOptions!) {
+  search(options: $options) {
+    users {
+      id
+      name
+    }
+    teams {
+      id
+      name
+    }
+    errors {
+      ...FError
+    }
+  }
+}

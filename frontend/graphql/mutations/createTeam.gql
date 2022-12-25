@@ -1,0 +1,20 @@
+mutation CreateTeam(
+  $name: String!
+  $members: [String!]!
+  $description: String!
+  $type: TeamType!
+) {
+  createTeam(
+    name: $name
+    members: $members
+    description: $description
+    type: $type
+  ) {
+    team {
+      ...FTeam
+    }
+    errors {
+      ...FError
+    }
+  }
+}

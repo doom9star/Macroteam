@@ -1,0 +1,10 @@
+fragment FChannel on Channel {
+  id
+  name
+  owners
+  createdAt
+  members {
+    id
+    name
+  }
+}

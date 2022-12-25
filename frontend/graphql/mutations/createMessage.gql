@@ -1,0 +1,10 @@
+mutation CreateMessage($channelId: String!, $body: String!) {
+  createMessage(channelId: $channelId, body: $body) {
+    message {
+      ...FMessage
+    }
+    errors {
+      ...FError
+    }
+  }
+}

@@ -1,0 +1,6 @@
+fragment FUser on User {
+  id
+  name
+  email
+  createdAt
+}

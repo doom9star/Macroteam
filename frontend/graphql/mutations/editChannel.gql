@@ -1,0 +1,14 @@
+mutation EditChannel(
+  $name: String!
+  $members: [String!]!
+  $channelId: String!
+) {
+  editChannel(name: $name, members: $members, channelId: $channelId) {
+    channel {
+      ...FChannel
+    }
+    errors {
+      ...FError
+    }
+  }
+}

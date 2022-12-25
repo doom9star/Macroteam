@@ -1,0 +1,4 @@
+fragment FError on CError {
+  property
+  message
+}

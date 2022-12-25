@@ -1,0 +1,13 @@
+mutation CreateEvent($args: CreateEventInput!) {
+  createEvent(args: $args) {
+    event {
+      ...FEvent
+      creator {
+        ...FUser
+      }
+    }
+    errors {
+      ...FError
+    }
+  }
+}

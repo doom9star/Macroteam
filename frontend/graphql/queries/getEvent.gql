@@ -1,0 +1,11 @@
+query GetEvent($id: String!) {
+  getEvent(id: $id) {
+    event {
+      ...FEvent
+      creator {
+        id
+        name
+      }
+    }
+  }
+}

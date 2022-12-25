@@ -1,0 +1,10 @@
+mutation CreateChannel($name: String!, $members: [String!]!, $teamId: String!) {
+  createChannel(name: $name, members: $members, teamId: $teamId) {
+    channel {
+      ...FChannel
+    }
+    errors {
+      ...FError
+    }
+  }
+}

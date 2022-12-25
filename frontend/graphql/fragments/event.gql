@@ -1,0 +1,7 @@
+fragment FEvent on Event {
+  id
+  title
+  start
+  end
+  resource
+}

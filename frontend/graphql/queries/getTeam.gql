@@ -1,0 +1,10 @@
+query GetTeam($id: String!) {
+  getTeam(id: $id) {
+    team {
+      ...FTeam
+    }
+    errors {
+      ...FError
+    }
+  }
+}

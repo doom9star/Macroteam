@@ -1,0 +1,10 @@
+mutation EditEvent($args: EditEventInput!) {
+  editEvent(args: $args) {
+    event {
+      ...FEvent
+    }
+    errors {
+      ...FError
+    }
+  }
+}

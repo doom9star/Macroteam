@@ -1,0 +1,5 @@
+mutation EditUser($values: EditUserInput!) {
+  editUser(values: $values) {
+    ...FStatusResponse
+  }
+}

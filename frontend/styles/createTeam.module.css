@@ -1,0 +1,12 @@
+.search_container {
+  background-color: rgb(240, 240, 240);
+  padding: 1rem 0rem;
+  min-height: 100px;
+}
+.search_container > div {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.search_container > div:hover {
+  background-color: white;
+}

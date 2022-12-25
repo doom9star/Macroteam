@@ -1,0 +1,6 @@
+fragment FStatusResponse on StatusResponse {
+  status
+  errors {
+    ...FError
+  }
+}

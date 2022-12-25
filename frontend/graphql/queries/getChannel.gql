@@ -1,0 +1,20 @@
+query GetChannel($id: String!) {
+  getChannel(id: $id) {
+    channel {
+      ...FChannel
+      messages {
+        ...FMessage
+      }
+      events {
+        ...FEvent
+        creator {
+          ...FUser
+        }
+      }
+      team {
+        id
+        name
+      }
+    }
+  }
+}

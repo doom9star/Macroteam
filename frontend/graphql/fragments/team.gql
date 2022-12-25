@@ -1,0 +1,11 @@
+fragment FTeam on Team {
+  id
+  name
+  description
+  createdAt
+  type
+  isOwner
+  channels {
+    ...FChannel
+  }
+}

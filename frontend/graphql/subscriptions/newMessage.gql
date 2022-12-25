@@ -1,0 +1,8 @@
+subscription NewMessage {
+  newMessage {
+    message {
+      ...FMessage
+    }
+    channelId
+  }
+}

@@ -1,0 +1,22 @@
+mutation EditTeam(
+  $teamId: String!
+  $name: String!
+  $description: String!
+  $type: TeamType!
+) {
+  editTeam(
+    teamId: $teamId
+    name: $name
+    description: $description
+    type: $type
+  ) {
+    team {
+      name
+      description
+      type
+    }
+    errors {
+      ...FError
+    }
+  }
+}

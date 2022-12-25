@@ -1,0 +1,19 @@
+query GetTeams {
+  getTeams {
+    teams {
+      id
+      name
+      isOwner
+      channels {
+        id
+        name
+        events {
+          ...FEvent
+        }
+      }
+    }
+    errors {
+      ...FError
+    }
+  }
+}

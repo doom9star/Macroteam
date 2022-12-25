@@ -1,0 +1,10 @@
+mutation Login($emailOrName: String!, $password: String!) {
+  login(emailOrName: $emailOrName, password: $password) {
+    user {
+      ...FUser
+    }
+    errors {
+      ...FError
+    }
+  }
+}
